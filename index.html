@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLeaf Plants</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            background-color: #f0f8f0;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero section */
+        .hero {
+            background: url('https://via.placeholder.com/1200x400/adebad/ffffff?text=GreenLeaf+Plants') center/cover no-repeat;
+            color: white;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* About section */
+        .about, .plants, .contact {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .about h2, .plants h2, .contact h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #2e7d32;
+        }
+        .about p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Plants section */
+        .plants-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .plant-box {
+            background-color: white;
+            border-radius: 10px;
+            width: 250px;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .plant-box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .plant-box:hover {
+            transform: scale(1.05);
+        }
+        .plant-box h3 {
+            margin: 15px 0 10px;
+            color: #2e7d32;
+        }
+
+        /* Contact form */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact button:hover {
+            background-color: #27632a;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2e7d32;
+            color: white;
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .plants-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GreenLeaf Plants</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#plants">Plants</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Bring Nature to Your Home</h2>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>GreenLeaf Plants is your one-stop shop for beautiful indoor and outdoor plants. We help you bring greenery and freshness into your life with our wide selection of plants and expert care tips.</p>
+    </section>
+
+    <section class="plants" id="plants">
+        <h2>Our Plants</h2>
+        <div class="plants-container">
+            <div class="plant-box">
+                <img src="https://via.placeholder.com/250x200/8bc34a/ffffff?text=Fiddle+Leaf+Fig" alt="Fiddle Leaf Fig">
+                <h3>Fiddle Leaf Fig</h3>
+                <p>Elegant indoor plant that thrives in bright, indirect light.</p>
+            </div>
+            <div class="plant-box">
+                <img src="https://via.placeholder.com/250x200/4caf50/ffffff?text=Snake+Plant" alt="Snake Plant">
+                <h3>Snake Plant</h3>
+                <p>Low-maintenance plant perfect for bedrooms and offices.</p>
+            </div>
+            <div class="plant-box">
+                <img src="https://via.placeholder.com/250x200/388e3c/ffffff?text=Monstera" alt="Monstera">
+                <h3>Monstera</h3>
+                <p>Popular tropical plant with unique split leaves.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GreenLeaf Plants. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
